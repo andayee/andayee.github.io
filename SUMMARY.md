@@ -9,7 +9,9 @@
 * 03-计算机网络
     * [tcp](src/03-计算机网络/tcp.md)
 * 04-数据库
-    * [tpcc-ob记录]
+    * mysql
+    * spider
+    * tpcc-ob记录
         * [1-基准测试介绍](src/04-tpcc/1-基准测试介绍.md)
         * [2-OceanBase如何做TPCC测试](src/04-tpcc/2-OceanBase如何做TPCC测试.md)
         * [3-基准测试之SQL优化](src/04-tpcc/3-基准测试之SQL优化.md)
@@ -18,4 +20,10 @@
         * [6-基准测试之链路层优化](src/04-tpcc/6-基准测试之链路层优化.md)
 * 05-misc
     * [gitbook安装](src/misc/gitbook安装.md)
+* 06-c++
+    * [c++11新特性](src/cpp/c++11新特性.md)
+* 06-微服务
+    * [brpc](src/cpp/brpc.md)
+        * [bthread](src/cpp/bthread.md)
+        * [resourcepool](src/cpp/bthread.md)
 
