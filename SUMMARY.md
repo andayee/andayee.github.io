@@ -24,6 +24,6 @@
     * [c++11新特性](src/cpp/c++11新特性.md)
 * 06-微服务
     * brpc
-        * [bthread](src/cpp/bthread.md)
-        * [resourcepool](src/cpp/bthread.md)
+        * [bthread](src/microserver/bthread.md)
+        * [resourcepool](src/microserver/bthread.md)
 
