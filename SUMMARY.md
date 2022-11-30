@@ -23,7 +23,8 @@
 * 06-c++
     * [c++11新特性](src/cpp/c++11新特性.md)
     * [调试方法与技巧](src/cpp/调试方法与技巧.md)
-* 06-微服务
+    * [指针常量与常量指针](src/cpp/指针常量与常量指针.md)
+* 07-微服务
     * brpc
         * [bthread](src/microserver/bthread.md)
         * [resourcepool](src/microserver/resoucepool.md)
