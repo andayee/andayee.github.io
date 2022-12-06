@@ -48,13 +48,13 @@ make -j4
 
 export MALLOC_CONF=prof:true,prof_final:true,prof_leak:true,lg_prof_interval:24
 
-3.指定mysqld使用新编译的jemalloc动态库（tdsql需要重新编译内核）
+3.指定mysqld使用新编译的jemalloc动态库（mysql需要重新编译内核）
 
-export LD_PRELOAD=/home/anda/MySQL-8.0/tdsql/depend/jemalloc/jemalloc-5.2.1/lib/libjemalloc.so
+export LD_PRELOAD=/home/www/MySQL-8.0/mysql/depend/jemalloc/jemalloc-5.2.1/lib/libjemalloc.so
 
 4.手动启动mysql
 
-./mysqld --defaults-file=/home/anda/pro-runmysql/phi/etc/my_3603.cnf --basedir=/home/anda/pro-runmysql/phi --datadir=/home/anda/pro-runmysql/phi/var/3603/dbdata_raw/data --plugin-dir=/home/anda/pro-runmysql/phi/lib/plugin --log-error=/home/anda/pro-runmysql/phi/log/3603/dblogs/mysqld.err --open-files-limit=100000 --pid-file=/home/anda/pro-runmysql/phi/var/3603/prod/mysql.pid --socket=/home/anda/pro-runmysql/phi/var/3603/prod/mysql.sock --port=3603
+./mysqld --defaults-file=/home/www/pro-runmysql/phi/etc/my_3603.cnf --basedir=/home/www/pro-runmysql/phi --datadir=/home/www/pro-runmysql/phi/var/3603/dbdata_raw/data --plugin-dir=/home/www/pro-runmysql/phi/lib/plugin --log-error=/home/www/pro-runmysql/phi/log/3603/dblogs/mysqld.err --open-files-limit=100000 --pid-file=/home/www/pro-runmysql/phi/var/3603/prod/mysql.pid --socket=/home/www/pro-runmysql/phi/var/3603/prod/mysql.sock --port=3603
 
 5.在目录下会生成profile文件
 
@@ -64,10 +64,10 @@ export LD_PRELOAD=/home/anda/MySQL-8.0/tdsql/depend/jemalloc/jemalloc-5.2.1/lib/
 
 编译jemalloc会生成jeprof分析程序
 
-/home/anda/MySQL-8.0/tdsql/depend/jemalloc/jemalloc-5.2.1/bin/jeprof mysqld jeprof.17213.9.i9.heap
+/home/www/MySQL-8.0/mysql/depend/jemalloc/jemalloc-5.2.1/bin/jeprof mysqld jeprof.17213.9.i9.heap
 
 
 
 7.如果觉得不够直观，可以生成图片
 
-/home/anda/MySQL-8.0/tdsql/depend/jemalloc/jemalloc-5.2.1/bin/jeprof --show_bytes --pdf mysqld jeprof.17213.20.i20.heap > app-profiling.pdf
+/home/www/MySQL-8.0/mysql/depend/jemalloc/jemalloc-5.2.1/bin/jeprof --show_bytes --pdf mysqld jeprof.17213.20.i20.heap > app-profiling.pdf
