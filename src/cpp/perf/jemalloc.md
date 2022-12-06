@@ -35,7 +35,7 @@ Query OK, 0 rows affected (0.01 sec)
 [root@/ #]dot -Tpng /tmp/jeprof1.dot > /tmp/jeprof1.png
 
 
-## 下面是老的记录，之前2.0的mysqld是静态编译的jemalloc。
+## 下面是老的记录，mysql的mysqld是静态编译的jemalloc。
 
 mysql使用jemalloc
 1.编译jemalloc支持profile
