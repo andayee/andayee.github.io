@@ -36,4 +36,8 @@
     * brpc
         * [bthread](src/microserver/bthread.md)
         * [resourcepool](src/microserver/resoucepool.md)
-
+* 08-财经
+	* ETF
+		* [波段策略.网格之一：写在前面、体系以及策略](src/08-money/etf/网格之一.md)
+		* [波段策略.网格之二：网格策略基础/1.0版](src/08-money/etf/网格之二.md)
+		* [波段策略.网格之一：写在前面、体系以及策略](src/08-money/etf/网格之三.md)

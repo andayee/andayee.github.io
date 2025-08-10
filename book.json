@@ -1,3 +1,11 @@
 {
-  "plugins":["expandable-chapters"]
+  "plugins":["expandable-chapters"],
+  "pluginsConfig": {
+    "expandable-chapters": {
+      "expandLevel": 1,      
+      "collapseOthers": true,
+	  "scrollToActive": true,
+	  "scrollHighlight": true
+    }
+  }
 }
